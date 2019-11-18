@@ -30,6 +30,7 @@
   ],
   "scripts": {
     "prepublish": "yarn lint && yarn test && yarn build",
+    "postinstall": "yarn build",
     "prebuild": "rimraf lib",
     "build": "tsc -p tsconfig.build.json",
     "clean": "rimraf lib && rimraf coverage",
